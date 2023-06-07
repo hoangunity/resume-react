@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html * {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+  }
+}
+
+.bg-image {
+  @apply bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url('https://images.pexels.com/photos/373557/pexels-photo-373557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')];
+}
