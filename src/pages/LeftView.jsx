@@ -6,7 +6,7 @@ const LeftView = () => {
     "https://media.licdn.com/dms/image/D5603AQGJ6ZpIoCvPXA/profile-displayphoto-shrink_800_800/0/1675063830131?e=1691625600&v=beta&t=Dvp1Df0KktXZTBliZSg27ORwLe_IqxqxDqbAFLO5bBo";
 
   return (
-    <div className="relative bg-[#0d334b]">
+    <div className="relative bg-[#0d334b] select-none">
       <div className="sticky top-0 left-0 basis-auto p-2 flex flex-col gap-5">
         <div className="w-[12rem] mx-auto">
           <img src={imgUrl} alt="avatar" className="rounded-[50%]" />

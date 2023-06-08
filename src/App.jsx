@@ -23,7 +23,9 @@ const App = () => {
   return (
     <div className="min-h-screen container mx-auto flex items-stretch justify-stretch">
       <LeftView />
-      <div className={`bg-image bg-center grow text-slate-200`}>
+      <div
+        className={`bg-image bg-center grow text-white mix-blend-hard-light`}
+      >
         <div className="flex flex-col ml-4 mt-2">
           <h2 className="font-bold text-4xl text-red-300">Duong Minh Hoang</h2>
           <h3 className="font-semibold text-2xl text-red-400">Web Developer</h3>
@@ -33,7 +35,7 @@ const App = () => {
             <div className="grow-0">
               <div className="flex gap-[0.5rem] p-1">
                 <span>
-                  <BirthdayCakeIcon />
+                  <BirthdayCakeIcon className={'transition-all ease-linear hover:scale-150 hover:text-pink-400'} />
                 </span>
                 <p className="pt-0.5">
                   14 {"-"} 11 {"-"} 1996
@@ -59,14 +61,28 @@ const App = () => {
                   <FaLinkedin className="w-7 h-7" />
                 </span>
                 <p className="pt-0.5">
-                  https://www.linkedin.com/in/hoangduongminh
+                  <a
+                    href="https://www.linkedin.com/in/hoangduongminh"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    https://www.linkedin.com/in/hoangduongminh
+                  </a>
                 </p>
               </div>
               <div className="flex gap-[0.5rem] p-1">
                 <span>
                   <FaGithub className="w-7 h-7" />
                 </span>
-                <p className="pt-0.5">https://www.github.com/hoangunity</p>
+                <p className="pt-0.5">
+                  <a
+                    href="https://www.github.com/hoangunity"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    https://www.github.com/hoangunity
+                  </a>
+                </p>
               </div>
 
               <div className="flex gap-[0.5rem] p-1">
@@ -128,7 +144,9 @@ const App = () => {
             <span>
               <FaSuitcase className="w-7 h-7 text-red-300" />
             </span>
-            <h2 className="text-3xl font-bold text-red-300">Professional Experience</h2>
+            <h2 className="text-3xl font-bold text-red-300">
+              Professional Experience
+            </h2>
           </div>
 
           <div className="ml-6">
@@ -175,19 +193,19 @@ const App = () => {
 
             <div className="flex gap-4 justify-evenly mt-3">
               <span>
-                <FaHtml5 className="w-[5rem] h-[5rem]" />
+                <FaHtml5 className="w-[5rem] h-[5rem] text-orange-400" />
               </span>
               <span>
-                <FaCss3Alt className="w-[5rem] h-[5rem]" />
+                <FaCss3Alt className="w-[5rem] h-[5rem] text-blue-400" />
               </span>
               <span>
-                <FaJs className="w-[5rem] h-[5rem]" />
+                <FaJs className="w-[5rem] h-[5rem] text-yellow-400" />
               </span>
               <span>
-                <FaNodeJs className="w-[5rem] h-[5rem]" />
+                <FaNodeJs className="w-[5rem] h-[5rem] text-green-400" />
               </span>
               <span>
-                <DiMongodb className="w-[5rem] h-[5rem]" />
+                <DiMongodb className="w-[5rem] h-[5rem] text-green-600" />
               </span>
             </div>
 
@@ -204,6 +222,8 @@ const App = () => {
                     Music player app:{" "}
                     <a
                       href="https://hoangunity.github.io/music-player-app/"
+                      target="_blank"
+                      rel="noreferrer"
                       className="text-blue-400 hover:text-red-200"
                     >
                       <b>https://hoangunity.github.io/music-player-app/</b>
@@ -215,6 +235,8 @@ const App = () => {
                     Custom countdown app:{" "}
                     <a
                       href="https://hoangunity.github.io/custom-countdown/"
+                      target="_blank"
+                      rel="noreferrer"
                       className="text-blue-400 hover:text-red-200"
                     >
                       <b>https://hoangunity.github.io/custom-countdown/</b>
@@ -231,6 +253,8 @@ const App = () => {
                     Form-validation:{" "}
                     <a
                       href="https://hoangunity.github.io/form-validation/"
+                      target="_blank"
+                      rel="noreferrer"
                       className="text-blue-400 hover:text-red-200"
                     >
                       <b>https://hoangunity.github.io/form-validation/</b>
@@ -250,7 +274,9 @@ const App = () => {
             <span>
               <CustomStarBadge color={`text-red-300`} />
             </span>
-            <h2 className="text-3xl font-bold text-red-300">Additional Information</h2>
+            <h2 className="text-3xl font-bold text-red-300">
+              Additional Information
+            </h2>
           </div>
 
           <div className="mt-2">
