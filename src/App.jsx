@@ -2,7 +2,6 @@ import {
   AcademicCap,
   BirthdayCakeIcon,
   CustomStarBadge,
-  DiMongodb,
   EmailIcon,
   FaCss3Alt,
   FaDotCircle,
@@ -10,12 +9,13 @@ import {
   FaHtml5,
   FaJs,
   FaLinkedin,
-  FaNodeJs,
   FaSuitcase,
   FaUserAlt,
   GiAchievement,
   MapPinIcon,
   PhoneNumberIcon,
+  FaReact,
+  SiTailwindcss,
 } from "./components/Icons";
 import LeftView from "./pages/LeftView";
 
@@ -35,7 +35,11 @@ const App = () => {
             <div className="grow-0">
               <div className="flex gap-[0.5rem] p-1">
                 <span>
-                  <BirthdayCakeIcon className={'transition-all ease-linear hover:scale-150 hover:text-pink-400'} />
+                  <BirthdayCakeIcon
+                    className={
+                      "transition-all ease-linear hover:scale-150 hover:text-pink-400"
+                    }
+                  />
                 </span>
                 <p className="pt-0.5">
                   14 {"-"} 11 {"-"} 1996
@@ -178,20 +182,16 @@ const App = () => {
                 </li>
                 <li>
                   <p className="text-lg">
-                    Back-end development: Knowledge of server-side programming
-                    languages (Node.js)
-                  </p>
-                </li>
-                <li>
-                  <p className="text-lg">
-                    Database design and management: Knowledge of database
-                    management systems (MongoDB)
+                    Proficient in React and Tailwind CSS, I excel at creating
+                    efficient and visually appealing web applications. Combining
+                    React&apos;s component-based approach with Tailwind
+                    CSS&apos;s responsive design.
                   </p>
                 </li>
               </ol>
             </div>
 
-            <div className="flex gap-4 justify-evenly mt-3">
+            <div className="flex gap-4 justify-evenly mt-5">
               <span>
                 <FaHtml5 className="w-[5rem] h-[5rem] text-orange-400" />
               </span>
@@ -202,14 +202,14 @@ const App = () => {
                 <FaJs className="w-[5rem] h-[5rem] text-yellow-400" />
               </span>
               <span>
-                <FaNodeJs className="w-[5rem] h-[5rem] text-green-400" />
+                <SiTailwindcss className="w-[5rem] h-[5rem] text-blue-700" />
               </span>
               <span>
-                <DiMongodb className="w-[5rem] h-[5rem] text-green-600" />
+                <FaReact className="w-[5rem] h-[5rem] text-blue-400" />
               </span>
             </div>
 
-            <div className="flex flex-col mt-2 ml-6">
+            <div className="flex flex-col mt-4 ml-6">
               <h3 className="flex gap-1.5 items-center font-bold text-xl">
                 <span>
                   <FaDotCircle className="w-2 h-2" />

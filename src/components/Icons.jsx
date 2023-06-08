@@ -8,10 +8,11 @@ import {
   FaCss3Alt,
   FaJs,
   FaNodeJs,
+  FaReact,
 } from "react-icons/fa";
 
-import { DiMongodb } from "react-icons/di";
 import { GiAchievement } from "react-icons/gi";
+import { SiTailwindcss } from "react-icons/si";
 
 export const ChatBubbleIcon = () => {
   return (
@@ -145,6 +146,7 @@ export {
   FaCss3Alt,
   FaJs,
   FaNodeJs,
-  DiMongodb,
   GiAchievement,
+  FaReact,
+  SiTailwindcss
 };
